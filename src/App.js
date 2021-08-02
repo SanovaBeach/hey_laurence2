@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles, { Container } from "./theme/GlobalStyles";
+import * as themes from "./theme/themes.json";
+import { setToLS } from "./utils/storage";
+import { useTheme } from "./theme/useTheme";
+import ThemeSelector from "./ThemeSelector";
 
 function App() {
+  setToLS("all-themes", themes.default);
+  const { theme, themeLoaded } = useTheme();
+  const [selectedTheme, setSelectedTheme] = useState(theme);
+
+  useEffect(() => {
+    setSelectedTheme(theme);
+  }, [themeLoaded]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {themeLoaded && (
+        <ThemeProvider theme={selectedTheme}>
+          <GlobalStyles />
+          <Container>
+            <ThemeSelector setter={setSelectedTheme} />
+          </Container>
+        </ThemeProvider>
+      )}
+    </>
   );
 }
 
