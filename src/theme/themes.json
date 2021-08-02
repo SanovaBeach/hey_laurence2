@@ -124,7 +124,7 @@
           "background": "#e52165"
         },
         "link": {
-          "text": "teal",
+          "text": "#FFF",
           "opacity": 1
         }
       }
@@ -134,13 +134,13 @@
       "name": "Turquoise",
       "colors": {
         "body": "#79cbb8 ",
-        "text": "#500472",
+        "text": "#FFF",
         "button": {
           "text": "#500472",
           "background": "#79cbb8"
         },
         "link": {
-          "text": "teal",
+          "text": "#FFF",
           "opacity": 1
         }
       }

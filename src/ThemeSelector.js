@@ -5,7 +5,7 @@ import { useTheme } from "./theme/useTheme";
 import { getFromLS } from "./utils/storage";
 
 const ThemedButton = styled.button`
-  border: 0;
+  border: 1px solid ${({ theme }) => theme.colors.body};
   border-radius: 10rem;
   height: 5rem;
   width: 5rem;
@@ -31,6 +31,7 @@ export default (props) => {
   const [data, setData] = useState(themesFromStore.data);
   const [themes, setThemes] = useState([]);
   const { setMode } = useTheme();
+  const [active, setActive] = useState(false);
 
   const themeSwitcher = (selectedTheme) => {
     console.log(selectedTheme);
