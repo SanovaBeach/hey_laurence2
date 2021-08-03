@@ -39,7 +39,6 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     background-color: #1064EA;
     color: #FFFFFF;
-    font-family: ${({ theme }) => theme.font};
   }
 
   button.btn {

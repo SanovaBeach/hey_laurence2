@@ -58,9 +58,7 @@ export default (props) => {
       <ThemedButton
         onClick={(theme) => themeSwitcher(props.theme)}
         style={{
-          backgroundColor: `${
-            data[_.camelCase(props.theme.name)].colors.button.background
-          }`,
+          backgroundColor: `${data[_.camelCase(props.theme.name)].colors.body}`,
           color: `${data[_.camelCase(props.theme.name)].colors.button.text}`,
           fontFamily: `${data[_.camelCase(props.theme.name)].font}`,
         }}
