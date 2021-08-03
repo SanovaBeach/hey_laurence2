@@ -7,6 +7,8 @@ import { useTheme } from "./theme/useTheme";
 import ThemeSelector from "./ThemeSelector";
 import Intro from "./components/Intro/Intro";
 import Tech from "./components/Tech/Tech";
+import { projects } from "./content/projects";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   setToLS("all-themes", themes.default);
@@ -26,6 +28,7 @@ function App() {
             <ThemeSelector setter={setSelectedTheme} />
             <Intro />
             <Tech />
+            <Projects projects={projects} />
           </Container>
         </ThemeProvider>
       )}

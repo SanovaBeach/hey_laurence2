@@ -1,10 +1,17 @@
 import testimonial from "../assets/testimonial.png";
-import blogr from "../assets/blogr.png";
-import timenow from "../assets/timenow.png";
-import eatsme2 from "../assets/eatsme2.png";
-import filmnion2 from "../assets/filmnion2.png";
-import personal2 from "../assets/personal2.png";
-import fastcash from "../assets/fastcash.png";
+import blogr from "../assets/blogr2.png";
+import timenow from "../assets/timenow2.png";
+import eatsme2 from "../assets/eatsme.png";
+import filmnion2 from "../assets/filmnion.png";
+import personal2 from "../assets/personal.png";
+import fastcash from "../assets/fastcash2.png";
+// tech stack
+import git from "../assets/tech/git-icon.svg";
+import html from "../assets/tech/html-5.svg";
+import react from "../assets/tech/react.svg";
+import sass from "../assets/tech/sass.svg";
+import contentful from "../assets/tech/contentful.svg";
+import styled from "../assets/tech/styled-components-1.svg";
 
 export const projects = [
   {
@@ -12,7 +19,7 @@ export const projects = [
     title: "Filmnion",
     description:
       "Filmnion is a movie and tv shows search, inspired by netflix layout and IMDB. You can search movies and tv shows, check the details, actors, and episodes.",
-    skills: ["HTML", "SCSS", "React", "axios"],
+    skills: [html, sass, react],
     links: {
       live: "https://filmnion.netlify.app/",
       github: "https://github.com/SanovaBeach/Filmnion",
@@ -23,7 +30,7 @@ export const projects = [
     title: "EatsMe",
     description:
       "EatsMe is a food review blog I made using Contentful. It shows foods that has been reviewed, it has recommended and category of food.",
-    skills: ["HTML", "SCSS", "React", "Contentful (CMS)", "axios"],
+    skills: [html, sass, react, contentful],
     links: {
       live: "https://eats-me.netlify.app/",
       github: "https://github.com/SanovaBeach/EatsMe",
@@ -34,7 +41,7 @@ export const projects = [
     title: "FastCash",
     description:
       "FastCash is a digital-bank, mobile wallet, mobile payments, bankless app. ",
-    skills: ["HTML", "styled-components"],
+    skills: [html, styled],
     links: {
       live: "https://fastcash.netlify.app/",
       github: "https://github.com/SanovaBeach/FastCash",
@@ -44,7 +51,7 @@ export const projects = [
     image: personal2,
     title: "Portfolio Website",
     description: "This is my personal website.",
-    skills: ["HTML", "SCSS", "React"],
+    skills: [html, sass, react],
     links: {
       live: "https://laurencebalazo.netlify.app/",
       github: "https://github.com/SanovaBeach/personal_website",
@@ -54,7 +61,7 @@ export const projects = [
     image: blogr,
     title: "Blogr",
     description: "This is a challenge in Frontendmentor. ",
-    skills: ["HTML", "SCSS", "React"],
+    skills: [html, sass, react],
     links: {
       live: "https://frontend-blogr.netlify.app/",
       github: "https://github.com/SanovaBeach/blogr",
@@ -65,7 +72,7 @@ export const projects = [
     title: "TimeNow",
     description:
       "This is a challenge in CodeWell. It consist of 2 pages, a homepage and a pricing page.",
-    skills: ["HTML", "SCSS", "React"],
+    skills: [html, sass, react],
     links: {
       live: "https://codewell-timenow-1.netlify.app/",
       github: "https://github.com/SanovaBeach/timenow",
@@ -75,7 +82,7 @@ export const projects = [
     image: testimonial,
     title: "Testimonial Grid",
     description: "This is a challenge in Frontendmentor. Note: Not Responsive",
-    skills: ["HTML", "SCSS"],
+    skills: [html, sass],
     links: {
       live: "https://sanovabeach.github.io/testimonal_grid/",
       github: "https://github.com/SanovaBeach/testimonal_grid",
