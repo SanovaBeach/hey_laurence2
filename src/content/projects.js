@@ -5,6 +5,7 @@ import eatsme2 from "../assets/eatsme.png";
 import filmnion2 from "../assets/filmnion.png";
 import personal2 from "../assets/personal.png";
 import fastcash from "../assets/fastcash2.png";
+import portfolio from "../assets/portfolio2.png";
 // tech stack
 import git from "../assets/tech/git-icon.svg";
 import html from "../assets/tech/html-5.svg";
@@ -49,12 +50,23 @@ export const projects = [
   },
   {
     image: personal2,
-    title: "Portfolio Website",
-    description: "This is my personal website.",
+    title: "Portfolio Website V1",
+    description: "This is my old personal website.",
     skills: [html, sass, react],
     links: {
-      live: "https://laurencebalazo.netlify.app/",
+      live: "https://laurencebalazo2.netlify.app/",
       github: "https://github.com/SanovaBeach/personal_website",
+    },
+  },
+  {
+    image: portfolio,
+    title: "Portfolio Website V2. You are here!",
+    description:
+      "This is my new personal website. I used styled components here to provide for my theme-styling",
+    skills: [html, styled, react],
+    links: {
+      live: "https://laurencebalazo.netlify.app/",
+      github: "https://github.com/SanovaBeach/hey_laurence2",
     },
   },
   {
