@@ -52,6 +52,14 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 5rem;
   max-width: 130rem;
+
+  @media screen and (max-width: 760px) {
+    padding: 0 2.5rem;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding: 0 1rem;
+  }
 `;
 
 export default GlobalStyles;

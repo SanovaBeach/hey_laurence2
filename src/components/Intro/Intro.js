@@ -31,6 +31,9 @@ const Wrapper = styled.div`
 
   .name {
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: 2.2rem;
+    }
   }
   .link {
     text-decoration: none;

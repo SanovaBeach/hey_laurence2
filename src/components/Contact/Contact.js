@@ -35,6 +35,10 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
 
+  @media screen and (max-width: 1000px) {
+    left: 0;
+  }
+
   .line {
     width: 2px;
     background-color: gray;
@@ -44,6 +48,8 @@ const Wrapper = styled.div`
   .socials {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 1.5rem;
   }
   .link-social {
@@ -68,6 +74,10 @@ const Wrapper = styled.div`
   .icon {
     font-size: 5rem;
     height: 5.5rem;
+
+    @media screen and (max-width: 480px) {
+      height: 2.5rem;
+    }
   }
 
   .contact {

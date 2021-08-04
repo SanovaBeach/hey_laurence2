@@ -27,6 +27,10 @@ const Heading = styled.h1`
   text-align: center;
   font-size: 4rem;
   padding: 3rem 0;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -43,6 +47,11 @@ const Wrapper = styled.div`
     flex-direction: column;
     height: 20rem;
     width: 20rem;
+
+    @media screen and (max-width: 480px) {
+      height: 14rem;
+      width: 14rem;
+    }
   }
 
   .image {
@@ -59,5 +68,9 @@ const Wrapper = styled.div`
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.5rem;
+    }
   }
 `;

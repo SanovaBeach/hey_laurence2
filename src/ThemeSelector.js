@@ -12,6 +12,12 @@ const ThemedButton = styled.button`
   cursor: pointer;
   margin: 0 0.5rem;
   margin: 0.5rem 0;
+
+  @media screen and (max-width: 760px) {
+    border-radius: 10rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `;
 
 const Container = styled.div`
@@ -20,10 +26,22 @@ const Container = styled.div`
   right: 0;
   margin-bottom: 5rem;
   margin-right: 5rem;
+
+  @media screen and (max-width: 1000px) {
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 760px) {
+    margin-bottom: 1rem;
+  }
 `;
 const ColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: row;
+  }
 `;
 
 export default (props) => {

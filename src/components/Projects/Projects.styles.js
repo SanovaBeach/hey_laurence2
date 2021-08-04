@@ -8,6 +8,10 @@ export const Heading = styled.h1`
 
 export const Wrapper = styled.div`
   padding: 8rem 0;
+
+  @media screen and (max-width: 480px) {
+    padding: 4rem 0;
+  }
 `;
 export const FlexContainer = styled.div`
   display: flex;
@@ -38,8 +42,7 @@ export const Image = styled.img`
 export const TextWrapper = styled.div`
   width: 100%;
   max-width: 90%;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 
   & > * {
     margin-bottom: 1.5rem;
@@ -52,6 +55,11 @@ export const SkillsWrapper = styled.div`
     width: 5rem;
     height: 5rem;
     margin: 0 1rem;
+
+    @media screen and (max-width: 480px) {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 `;
 
@@ -67,6 +75,11 @@ export const LinksWrapper = styled.div`
     border-radius: 1rem;
     transition: all 0.3s linear;
 
+    @media screen and (max-width: 480px) {
+      padding: 0.5rem 1rem;
+      font-size: 1.8rem;
+    }
+
     &:hover {
       background-color: ${({ theme }) => theme.colors.button.text};
       color: ${({ theme }) => theme.colors.button.background};
@@ -81,11 +94,14 @@ export const LinksWrapper = styled.div`
     padding: 1rem 2rem;
     transition: all 0.3s linear;
 
+    @media screen and (max-width: 480px) {
+      padding: 0.5rem 1rem;
+      font-size: 1.8rem;
+    }
+
     &:hover {
       background-color: ${({ theme }) => theme.colors.button.text};
       color: ${({ theme }) => theme.colors.button.background};
     }
   }
 `;
-
-
