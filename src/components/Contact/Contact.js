@@ -10,11 +10,11 @@ const Contact = () => {
         <div className="socials">
           <a
             href="https://www.linkedin.com/in/laurence-balazo-51a782216/"
-            className="link"
+            className="link-social"
           >
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://github.com/SanovaBeach" className="link">
+          <a href="https://github.com/SanovaBeach" className="link-social">
             <FaGithub className="icon" />
           </a>
         </div>
@@ -46,10 +46,23 @@ const Wrapper = styled.div`
     flex-direction: column;
     margin-top: 1.5rem;
   }
-  .link {
+  .link-social {
     color: ${({ theme }) => theme.colors.link.text};
     text-decoration: none;
     &:hover {
+      animation: scale 1s infinite;
+    }
+
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
   }
   .icon {
@@ -60,5 +73,6 @@ const Wrapper = styled.div`
   .contact {
     transform: rotate(270deg);
     margin-top: 5rem;
+    font-size: 2rem;
   }
 `;
