@@ -5,7 +5,7 @@ import eatsme2 from "../assets/eatsme.png";
 import filmnion2 from "../assets/filmnion.png";
 import personal2 from "../assets/personal.png";
 import fastcash from "../assets/fastcash2.png";
-import portfolio from "../assets/portfolio2.png";
+import portfolio from "../assets/portfolio.png";
 // tech stack
 import git from "../assets/tech/git-icon.svg";
 import html from "../assets/tech/html-5.svg";
