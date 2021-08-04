@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import Contact from "../Contact/Contact";
 
 const Intro = () => {
   return (
@@ -11,6 +12,7 @@ const Intro = () => {
       >
         laurencebalazo@gmail.com
       </a>
+      <Contact />
     </Wrapper>
   );
 };
@@ -25,6 +27,7 @@ const Wrapper = styled.div`
   position: sticky;
   top: 0;
   left: 0;
+  position: relative;
 
   .name {
     text-transform: uppercase;
